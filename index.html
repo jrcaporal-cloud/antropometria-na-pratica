@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Antropometria na Prática: da medição à interpretação</title>
+<meta name="description" content="Curso online Antropometria na Prática: da medição à interpretação: avaliação antropométrica no padrão ISAK, com Rinaldo Caporal e Ícaro Andrade. A partir de R$ 398.">
+<meta property="og:title" content="Antropometria na Prática: da medição à interpretação">
+<meta property="og:description" content="Transforme a antropometria em uma das ferramentas mais valiosas da sua prática clínica.">
+<meta property="og:type" content="website">
+<!-- domínio provisório (01/11/2026): antropometria.rinaldocaporal.com.br. Ao trocar, mudar og:url, canonical, og:image e o CNAME em _publicar/publicar_github.py -->
+<meta property="og:url" content="https://antropometria.rinaldocaporal.com.br/">
+<link rel="canonical" href="https://antropometria.rinaldocaporal.com.br/">
+<meta property="og:image" content="https://antropometria.rinaldocaporal.com.br/resources/og-v4.jpg">
+<meta property="og:image:alt" content="Curso Antropometria na Prática: da medição à interpretação: Rinaldo mede com fita o perímetro do braço de um avaliado">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<!-- metatags próprias: sem elas o appdeploy injeta autor "AppDeploy", @appdeployai e imagem genérica -->
+<meta name="twitter:title" content="Antropometria na Prática: da medição à interpretação">
+<meta name="twitter:description" content="Transforme a antropometria em uma das ferramentas mais valiosas da sua prática clínica.">
+<meta name="twitter:image" content="https://antropometria.rinaldocaporal.com.br/resources/og-v4.jpg">
+<meta name="author" content="Rinaldo Caporal e Ícaro Andrade">
+<link rel="apple-touch-icon" sizes="180x180" href="/resources/apple-touch-icon-v2.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#0D0D0D">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230D0D0D'/%3E%3Cg stroke='%2304F4FB' stroke-width='4' stroke-linecap='round'%3E%3Cpath d='M13 42V22'/%3E%3Cpath d='M22.5 42V30'/%3E%3Cpath d='M32 42V22'/%3E%3Cpath d='M41.5 42V30'/%3E%3Cpath d='M51 42V22'/%3E%3C/g%3E%3C/svg%3E">
+<!-- velocidade: capa do vídeo (maior elemento da 1ª tela) e as 3 fontes da 1ª tela chegam primeiro -->
+<link rel="preload" as="image" href="/resources/vsl-poster-v3.webp" type="image/webp" fetchpriority="high">
+<link rel="preload" as="font" type="font/woff2" href="/resources/f-archivo-cond.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/resources/f-archivo.woff2" crossorigin>
+<script>document.documentElement.classList.add('js')</script>
+<!-- TODO ANALYTICS: descomentar e preencher os IDs antes de rodar tráfego
+<script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init','SEU_PIXEL_ID');fbq('track','PageView');fbq('track','ViewContent');
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+<script>
+  window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
+  gtag('js',new Date());gtag('config','G-XXXXXXX');
+</script>
+-->
+
+<style>
+/* ================= FONTES (self-hosted, subset latin) ================= */
+/* identidade da Imersão: títulos em Archivo condensada (largura 62, pesos 500–800), texto em Archivo normal.
+   Recorte só com os caracteres do português: 155 KB → 68 KB de fontes */
+@font-face{font-family:'Archivo';font-style:normal;font-weight:400 700;font-display:swap;src:url('/resources/f-archivo.woff2') format('woff2');unicode-range:U+0020-007E,U+00A0-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2013-2014,U+2018-201A,U+201C-201E,U+2022,U+2026,U+2039-203A,U+20AC,U+2122,U+2212}
+@font-face{font-family:'Archivo Condensed';font-style:normal;font-weight:500 800;font-display:swap;src:url('/resources/f-archivo-cond.woff2') format('woff2');unicode-range:U+0020-007E,U+00A0-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2013-2014,U+2018-201A,U+201C-201E,U+2022,U+2026,U+2039-203A,U+20AC,U+2122,U+2212}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:400;font-display:swap;src:url('/resources/f-plexmono-400.woff2') format('woff2');unicode-range:U+0020-007E,U+00A0-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2013-2014,U+2018-201A,U+201C-201E,U+2022,U+2026,U+2039-203A,U+20AC,U+2122,U+2212}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:600;font-display:swap;src:url('/resources/f-plexmono-600.woff2') format('woff2');unicode-range:U+0020-007E,U+00A0-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2013-2014,U+2018-201A,U+201C-201E,U+2022,U+2026,U+2039-203A,U+20AC,U+2122,U+2212}
+/* reservas com o mesmo tamanho das fontes reais: o texto não "pula" quando a fonte chega
+   (larguras medidas: Archivo condensada 700 = 82,1% da Arial Narrow Bold, em caixa alta 800 = 84,9%; Archivo = 98,8% da Arial) */
+@font-face{font-family:'Archivo Condensed Fallback';src:local('Arial Narrow Bold'),local('ArialNarrow-Bold'),local('Helvetica Neue Condensed Bold'),local('HelveticaNeue-CondensedBold');size-adjust:82.1%;ascent-override:106.9%;descent-override:25.6%;line-gap-override:0%}
+@font-face{font-family:'Archivo Condensed Caps Fallback';src:local('Arial Narrow Bold'),local('ArialNarrow-Bold'),local('Helvetica Neue Condensed Bold'),local('HelveticaNeue-CondensedBold');size-adjust:84.9%;ascent-override:103.4%;descent-override:24.7%;line-gap-override:0%}
+@font-face{font-family:'Archivo Fallback';src:local('Arial'),local('ArialMT');size-adjust:98.8%;ascent-override:88.9%;descent-override:21.3%;line-gap-override:0%}
+
+/* ================= DESIGN TOKENS ================= */
+:root{
+  --paper:#F2F3F3;
+  --paper-2:#E6E8E8;
+  --ink:#0D0D0D;
+  --ink-soft:#4A4F50;
+  --green:#1A1C1D;
+  --green-2:#0D0D0D;
+  --green-line:#3A3D3E;
+  --accent:#04F4FB;
+  --accent-dark:#04F4FB;
+  --accent-deep:#00A9B0;
+  --accent-text:#00727A; /* ciano escuro: texto sobre fundo claro (5:1) */
+  --lime:#04F4FB; /* ciano da Imersão: destaques sobre fundo escuro (14:1) */
+  --tick:rgba(13,13,13,.28);
+  --tick-light:rgba(242,243,243,.30);
+  --radius:14px;
+  --font-display:"Archivo Condensed","Archivo Condensed Fallback","Arial Narrow",sans-serif-condensed,sans-serif;
+  --font-body:"Archivo","Archivo Fallback",Helvetica,Arial,sans-serif;
+  --font-mono:"IBM Plex Mono",Menlo,monospace;
+  --pad:clamp(20px,5vw,64px);
+  --maxw:1120px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--font-body);
+  font-size:clamp(16px,1.05rem,18px);
+  line-height:1.6;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+::selection{background:var(--lime);color:var(--ink)}
+
+/* ================= RULER MOTIF (âncora visual) ================= */
+.ruler{
+  height:26px;
+  background:
+    repeating-linear-gradient(90deg,var(--tick) 0 1.5px,transparent 1.5px 10px),
+    repeating-linear-gradient(90deg,var(--tick) 0 1.5px,transparent 1.5px 50px);
+  background-size:auto 12px,auto 26px;
+  background-repeat:repeat-x;
+  background-position:bottom left,bottom left;
+}
+.ruler--light{
+  background:
+    repeating-linear-gradient(90deg,var(--tick-light) 0 1.5px,transparent 1.5px 10px),
+    repeating-linear-gradient(90deg,var(--tick-light) 0 1.5px,transparent 1.5px 50px);
+  background-size:auto 12px,auto 26px;
+  background-repeat:repeat-x;
+  background-position:bottom left,bottom left;
+}
+.waitlist{background:var(--green);color:var(--paper);position:relative}
+.waitlist::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.waitlist .wrap{text-align:center;position:relative;z-index:1}
+.waitlist h2{font-family:var(--font-display);font-weight:700;font-size:clamp(1.9rem,5vw,2.8rem);line-height:1.04;max-width:16em;margin:0 auto}
+.waitlist p{margin:14px auto 24px;max-width:27.5em;color:rgba(242,243,243,.8)}
+
+.skip-link{
+  position:absolute;left:-9999px;top:12px;z-index:100;
+  background:var(--ink);color:var(--paper);padding:12px 20px;border-radius:8px;
+  font-weight:700;text-decoration:none;
+}
+.skip-link:focus{left:12px}
+.faq summary:focus-visible{outline:3px solid var(--accent-text);outline-offset:3px;border-radius:4px}
+.section-label{
+  font-family:var(--font-mono);
+  font-size:.72rem;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  display:flex;align-items:center;gap:14px;
+  color:var(--ink-soft);
+  margin-bottom:22px;
+}
+.section-label::after{content:"";flex:1;height:1px;background:currentColor;opacity:.35}
+.on-dark .section-label{color:rgba(242,243,243,.65)}
+
+/* ================= LAYOUT ================= */
+.wrap{max-width:var(--maxw);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
+section{padding:clamp(56px,9vw,110px) 0}
+
+/* ================= TOPBAR ================= */
+.topbar{
+  position:sticky;top:0;z-index:50;
+  background:rgba(242,243,243,.88);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(13,13,13,.12);
+}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:60px;position:relative}
+.brand{font-family:var(--font-mono);font-weight:600;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;color:inherit;text-decoration:none;white-space:nowrap}
+.brand em{font-style:normal;color:var(--accent-text)}
+.topbar a.btn{padding:12px 20px;font-size:.85rem;box-shadow:0 3px 0 var(--accent-deep)}
+.top-actions{display:flex;align-items:center;gap:8px}
+.nav{display:flex;gap:4px;margin-left:auto}
+.nav a{
+  font-family:var(--font-mono);font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--ink-soft);text-decoration:none;padding:10px 12px;border-radius:999px;
+  transition:color .2s ease,background .2s ease;
+}
+.nav a:hover{color:var(--ink);background:rgba(13,13,13,.06)}
+.nav a:focus-visible,.brand:focus-visible,.nav-toggle:focus-visible{outline:3px solid var(--accent-text);outline-offset:2px}
+.nav-toggle{display:none}
+section[id],footer[id]{scroll-margin-top:60px}
+.topbar a.btn{white-space:nowrap}
+@media (max-width:719px){
+  .topbar .wrap{gap:10px}
+  .top-actions{gap:4px}
+  .topbar a.btn{padding:11px 14px}
+  .nav-toggle{
+    flex:0 0 44px;
+    display:flex;align-items:center;justify-content:center;
+    width:44px;height:44px;border:none;border-radius:50%;background:transparent;cursor:pointer;color:var(--ink);
+  }
+  .nav-toggle span,.nav-toggle span::before,.nav-toggle span::after{
+    display:block;width:18px;height:2px;background:currentColor;border-radius:2px;position:relative;
+    transition:transform .25s ease,background .25s ease;
+  }
+  .nav-toggle span::before,.nav-toggle span::after{content:"";position:absolute;left:0}
+  .nav-toggle span::before{top:-6px}
+  .nav-toggle span::after{top:6px}
+  .nav-toggle[aria-expanded="true"] span{background:transparent}
+  .nav-toggle[aria-expanded="true"] span::before{transform:translateY(6px) rotate(45deg)}
+  .nav-toggle[aria-expanded="true"] span::after{transform:translateY(-6px) rotate(-45deg)}
+  .nav{
+    position:absolute;top:100%;left:0;right:0;margin:0;
+    flex-direction:column;gap:0;padding:8px var(--pad) 16px;
+    background:var(--paper);border-bottom:1px solid rgba(13,13,13,.12);
+    box-shadow:0 18px 30px -18px rgba(13,13,13,.35);
+    visibility:hidden;opacity:0;transform:translateY(-6px);
+    transition:opacity .2s ease,transform .2s ease,visibility 0s linear .2s;
+  }
+  .nav.open{visibility:visible;opacity:1;transform:none;transition:opacity .2s ease,transform .2s ease}
+  .nav a{font-size:.85rem;padding:14px 4px;border-radius:0;border-bottom:1px solid rgba(13,13,13,.1)}
+  .nav a:last-child{border-bottom:none}
+}
+
+/* ================= BUTTONS ================= */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  background:var(--accent-dark);color:#0D0D0D; /* branco sobre ciano não lê (1,4:1) */
+  font-family:var(--font-body);font-weight:700;font-size:1rem;
+  padding:17px 30px;border-radius:999px;text-decoration:none;
+  border:none;cursor:pointer;
+  box-shadow:0 6px 0 var(--accent-deep);
+  transition:transform .15s ease,box-shadow .15s ease,background .2s ease;
+  text-align:center;
+}
+.btn:active{transform:translateY(4px);box-shadow:0 2px 0 var(--accent-deep)}
+.btn:hover{background:#6AF8FC}
+.btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.btn--ghost{
+  background:transparent;color:var(--ink);
+  box-shadow:inset 0 0 0 2px var(--ink);
+}
+.btn--ghost:hover{background:var(--ink);color:var(--paper)}
+.btn--big{font-size:1.08rem;padding:19px 38px;width:100%;max-width:420px}
+.btn-note{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.06em;color:var(--ink-soft);margin-top:12px}
+.on-dark .btn-note{color:rgba(242,243,243,.6)}
+
+/* ================= HERO ================= */
+.hero{
+  background:var(--green);
+  color:var(--paper);
+  position:relative;
+  padding:clamp(64px,10vw,130px) 0 clamp(72px,10vw,130px);
+  overflow:hidden;
+}
+.hero::before{ /* régua vertical gigante à direita */
+  content:"";position:absolute;top:0;right:0;bottom:0;width:64px;
+  background:
+    repeating-linear-gradient(180deg,var(--tick-light) 0 1.5px,transparent 1.5px 12px),
+    repeating-linear-gradient(180deg,var(--tick-light) 0 2px,transparent 2px 60px);
+  background-size:22px auto,44px auto;
+  background-repeat:repeat-y;background-position:right top;
+  opacity:.8;pointer-events:none;
+}
+.hero .wrap{position:relative}
+.hero-kicker{
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:var(--font-mono);font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--lime);
+  border:1px solid rgba(4,244,251,.4);
+  padding:8px 14px;border-radius:999px;margin-bottom:26px;
+}
+.hero-kicker .dot{width:7px;height:7px;border-radius:50%;background:var(--lime);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+h1{
+  font-family:"Archivo Condensed","Archivo Condensed Caps Fallback","Arial Narrow",sans-serif-condensed,sans-serif; /* reserva calibrada para caixa alta */
+  font-weight:800;
+  font-size:clamp(2.6rem,8.2vw,4.9rem);
+  line-height:.96;
+  text-transform:uppercase;
+}
+h1 .u{color:var(--lime)}
+.hero-sub{
+  margin-top:26px;max-width:29.8em;
+  font-size:clamp(1.02rem,2.6vw,1.2rem);
+  color:rgba(242,243,243,.82);
+}
+.hero-cta{margin-top:38px;display:flex;flex-direction:column;align-items:flex-start;gap:0}
+.hero-meta{
+  margin-top:44px;display:flex;flex-wrap:wrap;gap:12px 28px;
+  font-family:var(--font-mono);font-size:.76rem;letter-spacing:.05em;
+  color:rgba(242,243,243,.7);
+}
+.hero-meta span{display:flex;align-items:center;gap:9px}
+.hero-meta span::before{content:"";width:6px;height:8px;background:var(--lime);clip-path:polygon(0 0,100% 50%,0 100%);flex:0 0 auto;opacity:.85}
+.hero-meta b{color:var(--lime);font-weight:600}
+
+/* ================= VSL PLACEHOLDER ================= */
+.vsl{margin:34px auto 0;max-width:340px}
+.vsl-label{display:block;font-family:var(--font-mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(242,243,243,.65);margin-bottom:10px}
+.vsl-video{width:100%;height:auto;display:block;border-radius:14px;background:#000;box-shadow:0 12px 40px rgba(0,0,0,.4)}
+
+/* ================= VALUE STACK ================= */
+.stack{margin:34px auto 0;max-width:440px;text-align:left}
+.stack-item{
+  display:flex;gap:10px;align-items:baseline;justify-content:space-between;
+  padding:10px 0;border-bottom:1px dashed rgba(242,243,243,.2);
+  font-size:.92rem;color:rgba(242,243,243,.88);
+}
+.stack-item .sname{display:flex;gap:10px;align-items:baseline;min-width:0}
+.stack-item .tick{flex:0 0 14px;height:12px;display:flex;align-items:center;justify-content:center;align-self:flex-start;margin-top:6px}
+.stack-item .sval{font-family:var(--font-mono);font-size:.74rem;color:rgba(242,243,243,.72);flex:0 0 auto;white-space:nowrap}
+.stack-item.bonus .sname b{color:var(--lime);font-weight:600}
+.stack-total{
+  display:flex;justify-content:space-between;align-items:baseline;
+  padding:14px 0 0;font-size:.95rem;
+}
+.stack-total .sval{font-family:var(--font-mono);color:var(--lime)}
+.pay-line{
+  margin-top:14px;font-family:var(--font-mono);font-size:.72rem;letter-spacing:.05em;
+  color:rgba(242,243,243,.72);
+}
+
+/* ================= SOLUÇÃO (dark) ================= */
+.solution{background:var(--green-2);color:var(--paper)}
+.generic-h2{
+  font-family:var(--font-display);font-weight:600;
+  font-size:clamp(2.1rem,5.6vw,3.4rem);line-height:1.02;
+  max-width:16em;
+}
+/* quadro real da gravação (Pratica.mp4, 39:40) */
+.real-shot{margin:40px 0 0;position:relative;border-radius:var(--radius);overflow:hidden;background:#000;border:1px solid rgba(242,243,243,.16)}
+.real-shot video{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block}
+.real-shot figcaption{
+  position:absolute;left:12px;right:12px;bottom:12px;
+  display:flex;flex-wrap:wrap;align-items:center;gap:8px;
+  font-family:var(--font-mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
+}
+.real-shot figcaption span{background:rgba(13,13,13,.88);padding:5px 10px;border-radius:4px;color:var(--paper)}
+.real-shot .rec{color:var(--lime);display:inline-flex;align-items:center;gap:7px}
+.real-shot .rec::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.solution h2{
+  font-family:var(--font-display);font-weight:600;
+  font-size:clamp(2.1rem,5.6vw,3.4rem);line-height:1.02;max-width:16em;
+}
+.solution .lead{margin-top:20px;color:rgba(242,243,243,.8);max-width:33.2em;font-size:clamp(1rem,2.4vw,1.15rem)}
+.sol-grid{margin-top:46px;display:grid;gap:16px;grid-template-columns:1fr}
+.sol-card{
+  border:1px solid rgba(242,243,243,.16);
+  border-radius:var(--radius);
+  padding:24px;
+  background:rgba(242,243,243,.03);
+  transition:border-color .2s ease, transform .2s ease;
+}
+.sol-card:hover{border-color:var(--lime);transform:translateY(-2px)}
+.sol-card .icon{
+  width:44px;height:44px;border-radius:10px;
+  background:var(--lime);color:var(--green-2);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-mono);font-weight:600;font-size:.85rem;
+  margin-bottom:16px;
+}
+.sol-card h3{font-family:var(--font-body);font-weight:700;font-size:1.05rem;margin-bottom:8px}
+.sol-card p{color:rgba(242,243,243,.72);font-size:.95rem}
+
+/* ================= PARA QUEM ================= */
+.who-list{margin-top:40px;display:grid;gap:0;grid-template-columns:1fr;border-top:1px solid rgba(13,13,13,.15)}
+.who-item{
+  display:flex;gap:16px;align-items:flex-start;
+  padding:20px 4px;
+  border-bottom:1px solid rgba(13,13,13,.15);
+}
+.who-item .check{
+  flex:0 0 auto;width:26px;height:26px;margin-top:2px;
+  border-radius:50%;background:var(--green);color:var(--lime);
+  display:flex;align-items:center;justify-content:center;
+  font-size:.8rem;font-weight:700;
+}
+/* visto desenhado (o caractere ✓ não existe nas fontes do site) */
+.who-item .check::after,.stack-item .tick::after{
+  content:"";display:block;width:10px;height:5px;margin-top:-2px;
+  border-left:2.5px solid var(--lime);border-bottom:2.5px solid var(--lime);transform:rotate(-45deg);
+}
+.who-item p{font-size:1rem}
+.who-item p b{font-weight:600}
+
+/* ================= TRANSFORMAÇÃO ================= */
+.transform{background:var(--paper-2)}
+.result-grid{margin-top:44px;display:grid;gap:0 48px;grid-template-columns:1fr;border-top:1px solid rgba(13,13,13,.18)}
+.result{
+  padding:24px 4px;display:flex;gap:20px;align-items:flex-start;
+  border-bottom:1px solid rgba(13,13,13,.18);
+}
+.result .num{
+  font-family:var(--font-display);font-weight:800;font-size:2.5rem;line-height:.9;
+  color:var(--accent-text);flex:0 0 2.1ch;
+}
+.result h3{font-size:1.05rem;font-weight:700;margin-bottom:4px}
+.result p{font-size:.94rem;color:var(--ink-soft)}
+
+/* ================= PRODUÇÃO ================= */
+
+.production{
+  margin-top:44px;
+  border:1px solid rgba(242,243,243,.22);border-radius:var(--radius);
+  padding:clamp(22px,4vw,32px);
+  background:rgba(242,243,243,.04);
+}
+.production .p-tag{
+  font-family:var(--font-mono);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--lime);display:block;margin-bottom:12px;
+}
+.production h3{font-family:var(--font-display);font-weight:700;font-size:clamp(1.5rem,4vw,2rem);line-height:1.05;margin-bottom:10px}
+.production p{color:rgba(242,243,243,.78);font-size:.98rem;max-width:34.4em}
+.production .p-specs{
+  margin-top:18px;display:flex;flex-wrap:wrap;gap:8px 10px;
+}
+.production .p-specs span{
+  font-family:var(--font-mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+  color:rgba(242,243,243,.85);
+  border:1px solid rgba(242,243,243,.3);border-radius:999px;
+  padding:7px 13px;
+}
+
+/* faixa de quadros reais (Pratica.mp4: 2:20, 10:00, 36:00) */
+.frames{
+  list-style:none;margin:22px 0 0;padding:0;
+  display:grid;grid-auto-flow:column;grid-auto-columns:78%;gap:12px;
+  overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;
+}
+.frames::-webkit-scrollbar{display:none}
+.frames li{scroll-snap-align:start;position:relative;border-radius:10px;overflow:hidden;background:#000}
+.frames video{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;display:block}
+.frames span{
+  position:absolute;left:8px;bottom:8px;
+  font-family:var(--font-mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--paper);background:rgba(13,13,13,.88);padding:4px 8px;border-radius:4px;
+}
+.frames span b{color:var(--lime);font-weight:600;margin-right:4px}
+
+/* prévia da apostila (36 p.) */
+.apostila{margin-top:44px}
+.apostila h3{font-family:var(--font-display);font-weight:700;font-size:clamp(1.55rem,4vw,2rem);line-height:1.05}
+.apostila>p{margin-top:8px;color:var(--ink-soft);font-size:.95rem;max-width:34.4em}
+.pages{
+  list-style:none;margin:22px 0 0;padding:4px 2px 10px;
+  display:grid;grid-auto-flow:column;grid-auto-columns:62%;gap:14px;
+  overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;
+}
+.pages::-webkit-scrollbar{display:none}
+.pages li{scroll-snap-align:start}
+.pages button{
+  display:block;width:100%;padding:0;border:0;background:none;cursor:zoom-in;text-align:left;font:inherit;color:inherit;
+}
+.pages img{
+  width:100%;height:auto;aspect-ratio:480/679;background:#fff;border-radius:4px;
+  box-shadow:0 1px 0 rgba(13,13,13,.08),0 10px 24px -12px rgba(13,13,13,.45);
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.pages button:hover img{transform:translateY(-3px);box-shadow:0 1px 0 rgba(13,13,13,.08),0 16px 30px -14px rgba(13,13,13,.5)}
+.pages button:focus-visible{outline:3px solid var(--accent-text);outline-offset:4px;border-radius:4px}
+.pages span{display:block;margin-top:10px;font-family:var(--font-mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
+.viewer{border:0;padding:0;background:transparent;max-width:min(92vw,760px);max-height:92vh;margin:auto;overflow:visible}
+.viewer::backdrop{background:rgba(13,13,13,.82)}
+.viewer img{display:block;width:auto;max-width:100%;max-height:88vh;height:auto;border-radius:4px;background:#fff}
+.viewer-close{
+  position:absolute;top:-14px;right:-14px;width:44px;height:44px;border-radius:50%;border:0;cursor:pointer;
+  background:var(--paper);color:var(--ink);font-size:1.6rem;line-height:1;box-shadow:0 4px 14px rgba(0,0,0,.35);
+}
+.viewer-close:focus-visible{outline:3px solid var(--lime);outline-offset:2px}
+
+/* "Como funciona" compacto, dentro de "O resultado" */
+.format{margin-top:40px}
+.format-tag{display:block;font-family:var(--font-mono);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent-text);margin-bottom:12px}
+.format ul{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.format li{font-size:.94rem;color:var(--ink-soft);padding:12px 0;border-top:1px solid rgba(13,13,13,.15);line-height:1.45}
+.format li b{display:block;color:var(--ink);font-weight:700}
+
+/* foto da turma presencial (prova social) */
+.class-photo{margin:20px 0 0;background:#fff;border:1px solid rgba(13,13,13,.1);border-radius:var(--radius);overflow:hidden}
+.class-photo img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:50% 45%}
+.class-photo figcaption{padding:18px 22px;font-size:.94rem;color:var(--ink-soft);display:flex;flex-direction:column;gap:6px}
+.class-photo .tag{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-text)}
+
+/* ================= ECONOMIA DE EQUIPAMENTO ================= */
+.savings{
+  margin-top:40px;
+  display:flex;gap:18px;align-items:flex-start;
+  border:1.5px dashed rgba(13,13,13,.4);border-radius:var(--radius);
+  padding:clamp(20px,4vw,28px);
+  background:#fff;
+}
+.savings .s-seal{
+  flex:0 0 auto;width:56px;height:56px;border-radius:50%;
+  background:var(--green);color:var(--lime);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-mono);font-weight:600;font-size:.95rem;
+}
+.savings h3{font-size:1.05rem;font-weight:700;margin-bottom:6px}
+.savings p{font-size:.95rem;color:var(--ink-soft)}
+.savings p b{color:var(--ink)}
+
+/* ================= MÓDULOS ================= */
+.modules{background:var(--green);color:var(--paper)}
+.module-list{margin-top:44px;border-top:1px solid rgba(242,243,243,.2)}
+.module{
+  border-bottom:1px solid rgba(242,243,243,.2);
+}
+.module button{
+  width:100%;background:none;border:none;color:inherit;cursor:pointer;
+  display:flex;align-items:baseline;gap:18px;text-align:left;
+  padding:22px 4px;font-family:inherit;
+}
+.module button:focus-visible{outline:2px solid var(--lime);outline-offset:2px}
+.module .m-num{
+  font-family:var(--font-mono);font-size:.8rem;color:var(--lime);
+  flex:0 0 3.2ch;letter-spacing:.05em;
+}
+.module .m-title{
+  font-family:var(--font-display);font-weight:600;
+  font-size:clamp(1.25rem,3.4vw,1.6rem);flex:1;line-height:1.15;letter-spacing:.005em;
+}
+.module .m-dur{
+  font-family:var(--font-mono);font-size:.74rem;color:rgba(242,243,243,.72);
+  flex:0 0 auto;letter-spacing:.04em;
+}
+.module .m-plus{
+  font-family:var(--font-mono);font-size:1.2rem;color:rgba(242,243,243,.6);
+  transition:transform .25s ease;flex:0 0 auto;
+}
+.module.open .m-plus{transform:rotate(45deg);color:var(--lime)}
+.module .m-body{
+  display:grid;grid-template-rows:0fr;transition:grid-template-rows .3s ease;
+}
+.module.open .m-body{grid-template-rows:1fr}
+.module .m-body-inner{
+  overflow:hidden;min-height:0;
+  padding:0 4px 0 calc(3.2ch + 18px + 4px);
+  color:rgba(242,243,243,.75);font-size:.95rem;max-width:34.4em;
+}
+.module.open .m-body-inner{padding-bottom:24px}
+
+/* ================= INSTRUTORES ================= */
+.mentors-grid{margin-top:44px;display:grid;gap:20px;grid-template-columns:1fr}
+.mentor{
+  background:#fff;border:1px solid rgba(13,13,13,.1);border-radius:var(--radius);
+  overflow:hidden;
+}
+.mentor .photo{
+  aspect-ratio:4/3;background:var(--paper-2);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--ink-soft);
+  background-image:repeating-linear-gradient(90deg,rgba(13,13,13,.07) 0 1px,transparent 1px 14px);
+  overflow:hidden;
+}
+.mentor .photo{position:relative}
+.mentor .photo img{width:100%;height:100%;object-fit:cover;object-position:center;filter:grayscale(1) contrast(1.08) brightness(1.03)}
+.mentor .photo::after{ /* duotone: unifica fundos e luz das duas fotos na paleta da página */
+  content:"";position:absolute;inset:0;
+  background:var(--green);mix-blend-mode:color;opacity:.5;pointer-events:none;
+}
+.mentor blockquote{
+  margin:14px 0 0;padding:12px 16px;
+  border-left:3px solid var(--accent);
+  background:var(--paper);border-radius:0 8px 8px 0;
+  font-family:var(--font-body);font-weight:500;
+  font-size:.98rem;line-height:1.5;color:var(--ink);
+}
+/* Bloco "Você se identifica?" (padrão v1Club) */
+.identify{
+  margin-top:40px;text-align:center;
+  background:var(--green);color:var(--paper);
+  border-radius:var(--radius);
+  padding:clamp(28px,6vw,44px);
+}
+.identify .q{
+  font-family:var(--font-mono);font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--lime);
+}
+.identify p{margin:12px auto 22px;max-width:23em;font-size:1.02rem;color:rgba(242,243,243,.85)}
+.mentor .info{padding:22px}
+.mentor h3{font-family:var(--font-display);font-weight:700;font-size:1.75rem;line-height:1.05}
+.mentor .cred{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-text);margin:6px 0 12px}
+.mentor p{font-size:.94rem;color:var(--ink-soft)}
+.mentor .bio+.bio{margin-top:10px}
+
+/* ================= OFERTA ================= */
+.offer{background:var(--green-2);color:var(--paper);text-align:center}
+.offer-box{
+  max-width:520px;margin:0 auto;
+  border:1.5px solid rgba(242,243,243,.25);border-radius:20px;
+  padding:clamp(28px,6vw,48px);
+  background:rgba(242,243,243,.04);
+  position:relative;
+}
+.offer-box::before{
+  content:"";position:absolute;top:0;left:24px;right:24px;height:14px;
+  background:repeating-linear-gradient(90deg,var(--tick-light) 0 1.5px,transparent 1.5px 10px);
+  background-position:top left;background-repeat:repeat-x;
+}
+.offer h2{font-family:var(--font-display);font-weight:700;font-size:clamp(2.1rem,5.8vw,3.2rem);line-height:1.02;max-width:14em;margin:0 auto}
+.offer .sub{margin:14px auto 0;max-width:30.9em;color:rgba(242,243,243,.75);font-size:1rem}
+.offer .sub b{color:var(--lime)}
+.launch-badge{
+  display:inline-block;margin-top:30px;
+  font-family:var(--font-mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--lime);border:1px solid rgba(4,244,251,.45);
+  padding:7px 14px;border-radius:999px;
+}
+.price-old{
+  font-family:var(--font-mono);font-size:.9rem;color:rgba(242,243,243,.72);
+  margin-top:16px;
+}
+.price-old s{text-decoration-thickness:1.5px}
+.price{
+  font-family:var(--font-display);font-weight:800;
+  font-size:clamp(3rem,10vw,4.6rem);line-height:1;color:var(--lime);
+  margin-top:6px;
+}
+.price small{font-size:.4em;font-weight:500;color:rgba(242,243,243,.7)}
+.price-cash{font-family:var(--font-mono);font-size:.82rem;color:rgba(242,243,243,.65);margin-top:8px}
+.offer .btn{margin-top:30px}
+/* duas ofertas: curso (R$ 398) e curso completo (R$ 498) */
+.offer-grid{margin:40px auto 0;max-width:980px;display:grid;gap:22px;grid-template-columns:1fr;align-items:stretch}
+.offer-grid .offer-box{max-width:none;margin:0;display:flex;flex-direction:column;align-items:center}
+.offer-box--curso{box-shadow:none!important}
+.offer-nome{font-family:var(--font-display);font-weight:700;font-size:clamp(1.5rem,4vw,1.9rem);line-height:1.05;margin-top:16px}
+.offer-lista{list-style:none;margin:24px 0 0;padding:0;width:100%;max-width:360px;text-align:left;display:grid;gap:0}
+.offer-lista li{display:flex;gap:10px;align-items:flex-start;padding:10px 0;border-bottom:1px dashed rgba(242,243,243,.2);font-size:.95rem;color:rgba(242,243,243,.88)}
+.offer-lista li:last-child{border-bottom:none}
+.offer-lista li b{color:var(--lime);font-weight:700}
+.offer-lista .tick{flex:0 0 14px;height:12px;display:flex;align-items:center;justify-content:center;margin-top:6px}
+.offer-lista .tick::after{content:"";display:block;width:10px;height:5px;margin-top:-2px;border-left:2.5px solid var(--lime);border-bottom:2.5px solid var(--lime);transform:rotate(-45deg)}
+.offer-grid .btn{margin-top:auto;padding-top:19px}
+.offer-grid .offer-lista{margin-bottom:28px}
+.launch-badge--cheio{background:var(--lime);color:var(--ink);border-color:var(--lime);font-weight:600}
+.btn--ghost-dark{background:transparent;color:var(--paper);box-shadow:inset 0 0 0 2px rgba(242,243,243,.55)}
+.btn--ghost-dark:hover{background:rgba(242,243,243,.1)}
+@media (min-width:860px){.offer-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:859px){.offer-box--completo{order:-1}} /* no celular a versão completa aparece primeiro */
+.offer-includes{
+  margin:34px auto 0;max-width:420px;text-align:left;
+  display:grid;gap:10px;
+}
+.offer-includes div{
+  display:flex;gap:10px;align-items:flex-start;
+  font-size:.92rem;color:rgba(242,243,243,.85);
+}
+.offer-includes .tick{color:var(--lime);font-weight:700;flex:0 0 auto}
+.guarantee{
+  margin:40px auto 0;max-width:520px;
+  display:flex;gap:16px;align-items:flex-start;text-align:left;
+  border:1px dashed rgba(242,243,243,.35);border-radius:var(--radius);
+  padding:20px;
+}
+.guarantee .seal{
+  flex:0 0 auto;width:56px;height:56px;border-radius:50%;
+  border:2px solid var(--lime);color:var(--lime);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-mono);font-weight:600;font-size:.75rem;text-align:center;line-height:1.1;
+}
+.guarantee h3{font-size:1rem;font-weight:700;margin-bottom:4px}
+.guarantee p{font-size:.88rem;color:rgba(242,243,243,.72)}
+
+/* ================= FAQ ================= */
+.faq-list{margin-top:40px;border-top:1px solid rgba(13,13,13,.15)}
+.faq{border-bottom:1px solid rgba(13,13,13,.15)}
+.faq summary{
+  cursor:pointer;list-style:none;
+  display:flex;justify-content:space-between;align-items:center;gap:16px;
+  padding:20px 4px;font-weight:600;font-size:1rem;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"+";font-family:var(--font-mono);font-size:1.2rem;color:var(--accent-text);
+  transition:transform .25s ease;flex:0 0 auto;
+}
+.faq[open] summary::after{transform:rotate(45deg)}
+.faq .a{padding:0 4px 20px;color:var(--ink-soft);font-size:.95rem;max-width:35.5em}
+
+/* ================= FOOTER ================= */
+footer{
+  background:var(--ink);color:rgba(242,243,243,.6);
+  padding:32px 0 110px;
+  font-family:var(--font-mono);font-size:.72rem;letter-spacing:.06em;
+}
+footer .wrap{display:flex;flex-direction:column;gap:8px}
+footer a{display:inline-block;padding:6px 2px}
+
+/* ================= STICKY MOBILE CTA ================= */
+.sticky-cta{
+  position:fixed;left:0;right:0;bottom:0;z-index:60;
+  padding:12px var(--pad) calc(12px + env(safe-area-inset-bottom));
+  background:rgba(13,13,13,.92);backdrop-filter:blur(8px);
+  transform:translateY(110%);transition:transform .35s ease;
+  display:flex;align-items:center;gap:14px;justify-content:space-between;
+}
+.sticky-cta.show{transform:translateY(0)}
+.sticky-cta .info{color:var(--paper);line-height:1.2;min-width:0}
+.sticky-cta .info .t{font-weight:700;font-size:.85rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sticky-cta .info .p{font-family:var(--font-mono);font-size:.74rem;color:var(--lime)}
+.sticky-cta .btn{padding:13px 22px;font-size:.9rem;box-shadow:0 4px 0 var(--accent-deep);flex:0 0 auto}
+
+/* ================= REVEAL ANIMATION ================= */
+/* escopado em .js: sem JavaScript, todo o conteúdo permanece visível */
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .js .reveal{opacity:1;transform:none;transition:none}
+  .hero-kicker .dot{animation:none}
+  html{scroll-behavior:auto}
+}
+
+
+/* ================= ACABAMENTOS (grain, réguas nas fotos, progresso) ================= */
+/* grain sutil nos fundos verdes */
+.solution,.modules,.offer{position:relative}
+.hero::after,.solution::after,.modules::after,.offer::after{
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* régua de medição no topo das fotos dos mentores */
+.mentor .photo::after{z-index:1}
+.mentor .photo::before{
+  content:"";position:absolute;inset:0;z-index:2;pointer-events:none;
+  background:
+    repeating-linear-gradient(90deg,rgba(242,243,243,.85) 0 1px,transparent 1px 9px) top left/100% 7px no-repeat,
+    repeating-linear-gradient(90deg,rgba(242,243,243,.85) 0 1px,transparent 1px 36px) top left/100% 13px no-repeat;
+}
+.mentor .photo .ph-tag{
+  position:absolute;right:10px;bottom:10px;z-index:3;
+  font-family:var(--font-mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--lime);background:rgba(13,13,13,.88);
+  padding:4px 9px;border-radius:4px;
+}
+
+/* barras de duração proporcionais nos módulos */
+.module .m-dur{display:flex;align-items:center;gap:8px}
+.module .m-dur i{display:block;height:3px;border-radius:2px;background:var(--lime);opacity:.9}
+
+/* barra de progresso de leitura (régua no topo) */
+.progress{
+  position:fixed;top:0;left:0;right:0;height:3px;z-index:80;pointer-events:none;
+  background:repeating-linear-gradient(90deg,rgba(13,13,13,.14) 0 1.5px,transparent 1.5px 10%);
+}
+.progress span{display:block;height:100%;width:0;background:var(--lime)}
+
+/* oferta: box vencedor + vinheta */
+.offer{background:radial-gradient(130% 100% at 50% 0%,var(--green-2) 55%,#000000 100%)}
+.offer-box--completo{box-shadow:9px 9px 0 rgba(4,244,251,.85)}
+
+/* títulos condensados como o cartaz da Imersão; h1 em caixa alta */
+.generic-h2,.solution h2,.offer h2,.waitlist h2,.modules h2{font-weight:700;letter-spacing:.003em}
+
+/* ================= MOBILE ================= */
+@media (max-width:719px){
+  .hero::before{width:22px;opacity:.45} /* régua não invade o texto em 360-390px */
+  .real-shot video{aspect-ratio:1/1;object-position:42% 50%}
+  .real-shot--icaro video{object-position:14% 50%} /* rosto dele fica no terço esquerdo do quadro */
+  .offer-box--completo{box-shadow:6px 6px 0 rgba(4,244,251,.85)}
+}
+
+
+/* Stagger: cards de um mesmo grid entram em cascata */
+.js .sol-grid .reveal:nth-child(2),
+.js .mentors-grid .reveal:nth-child(2),.js .result-grid .reveal:nth-child(2){transition-delay:.08s}
+.js .sol-grid .reveal:nth-child(3),.js .result-grid .reveal:nth-child(3){transition-delay:.16s}
+.js .result-grid .reveal:nth-child(4){transition-delay:.24s}
+.js .result-grid .reveal:nth-child(5){transition-delay:.32s}
+.js .result-grid .reveal:nth-child(6){transition-delay:.4s}
+@media (prefers-reduced-motion:reduce){.js [class*="-grid"] .reveal{transition-delay:0s}}
+
+/* Hero desktop: texto + VSL lado a lado */
+@media (min-width:980px){
+  .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;column-gap:64px;align-items:center}
+  .hero .wrap>*{grid-column:1}
+  .hero .vsl{grid-column:2;grid-row:2/5;margin-top:0;max-width:380px;width:100%;align-self:center;justify-self:center}
+  .hero-cta{grid-row:5}
+  .hero-meta{grid-column:1/-1}
+}
+
+/* ================= DESKTOP ================= */
+@media (min-width:720px){
+  .sol-grid{grid-template-columns:repeat(3,1fr)}
+  .who-list{grid-template-columns:1fr 1fr;column-gap:40px}
+  .result-grid{grid-template-columns:repeat(2,1fr)}
+  .format ul{grid-template-columns:repeat(5,1fr)}
+  .format li{border-top:none;border-left:1px solid rgba(13,13,13,.15);padding:4px 16px}
+  .format li:first-child{border-left:none;padding-left:0}
+  .frames{grid-template-columns:repeat(3,1fr);overflow:visible}
+  .pages{grid-template-columns:repeat(4,1fr);overflow:visible;gap:22px}
+  .class-photo{display:grid;grid-template-columns:1.7fr 1fr;align-items:center}
+  .class-photo img{aspect-ratio:4/3;height:100%}
+  .class-photo figcaption{padding:28px 32px;font-size:1rem;gap:10px}
+  .mentors-grid{grid-template-columns:1fr 1fr}
+  .sticky-cta{display:none}
+  footer{padding-bottom:32px}
+}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Qual a diferença entre o curso e o curso completo?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "O curso (R$ 398) tem os 8 módulos, cerca de 5 horas de aulas, com acesso vitalício. O curso completo (R$ 498) soma a apostila de 36 páginas, a skill que gera o relatório antropométrico completo e uma aula com caso prático."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Dá para aprender uma técnica manual assistindo vídeo?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sim — desde que o vídeo mostre exatamente o que a sua mão precisa fazer. Por isso o curso não é só teoria: a avaliação completa é demonstrada medida a medida, em ângulo fechado, mostrando pegada, posicionamento e leitura. Você assiste, treina em alguém próximo e revê a demonstração quantas vezes precisar."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Ainda não sou formado. O curso é para mim?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Com certeza. A faculdade te ensina a teoria, mas não te prepara para avaliar um paciente de verdade. Imagine se formar não apenas com o diploma na mão, mas já dominando uma habilidade que a maioria dos profissionais formados não tem. É uma vantagem competitiva gigantesca."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Preciso ter equipamentos para começar?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Não — e é até melhor comprar depois de começar. O módulo 02 passa por cada instrumento e mostra por que o adipômetro clínico atende quase todos os casos: um modelo de cerca de R$ 150 bem calibrado não perde para um de R$ 1.000. Comprando certo na primeira vez, a economia pode pagar o curso."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "O que é a skill que gera o relatório antropométrico?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "É uma skill para o Claude, a inteligência artificial da Anthropic: você a instala na sua conta, envia a avaliação do paciente (PDF, print ou anotação) e recebe o relatório antropométrico completo no padrão ISAK. Os cálculos são feitos por código conferido, não pela IA. É preciso ter uma conta no Claude."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "O curso emite certificação oficial da ISAK?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Não. A certificação oficial ISAK só é emitida em cursos presenciais credenciados. Aqui você aprende a técnica e a padronização com base nos princípios da ISAK, por uma fração do investimento — ideal para aplicar no consultório e para se preparar caso queira a certificação presencial no futuro."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Por quanto tempo terei acesso?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Acesso vitalício. Compre uma vez e consulte sempre que precisar."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Antropometria é melhor que bioimpedância?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "São ferramentas diferentes. A antropometria bem executada é barata, reproduzível e independe de condições como hidratação — e te dá autonomia para avaliar qualquer paciente, em qualquer lugar. O curso te ensina a dominá-la para não depender de um único método."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Quais são as formas de pagamento?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Pix, cartão de crédito em até 12x ou boleto. O pagamento é processado pela Kiwify, uma plataforma segura de cursos online."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Como recebo o acesso depois da compra?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Imediatamente. Assim que o pagamento for confirmado, você recebe por e-mail o link da área de alunos com todos os módulos — e, no curso completo, a apostila, a skill de relatório e a aula com caso prático."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Preciso de alguém para praticar as medidas?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Ajuda, mas não é obrigatório para acompanhar o curso. Qualquer pessoa próxima serve de modelo para treinar, seguindo as demonstrações das aulas. Muitos alunos praticam com colegas, familiares ou os próprios pacientes desde a primeira semana."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "E se eu não gostar do curso?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Você tem 7 dias de garantia incondicional. Se não for para você, devolvemos 100% do valor."
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#topo">Pular para o conteúdo</a>
+<div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+<!-- TOPO -->
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#topo">ANTROPO<em>/</em>PRÁTICA</a>
+    <nav class="nav" id="nav" aria-label="Seções da página">
+      <a href="#sobre">Sobre</a>
+      <a href="#oferta">Preço</a>
+      <a href="#duvidas">Dúvidas</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div class="top-actions">
+      <a class="btn" href="#oferta">Quero acesso</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Abrir menu"><span aria-hidden="true"></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero on-dark" id="topo">
+  <div class="wrap">
+    <span class="hero-kicker"><span class="dot"></span>Curso online · Padrão internacional ISAK</span>
+    <h1>Avaliações antropométricas com <span class="u">precisão de verdade</span> — sem improviso.</h1>
+    <!-- vídeo logo após o título: no celular aparece antes do texto; no PC fica na coluna da direita -->
+    <div class="vsl">
+      <span class="vsl-label">Apresentação do curso</span>
+      <video class="vsl-video" controls playsinline preload="none" poster="/resources/vsl-poster-v3.webp" width="720" height="1280">
+        <source src="/resources/vsl-v3.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo HTML5.
+      </video>
+    </div>
+    <p class="hero-sub">Aprenda a realizar avaliações antropométricas com segurança, precisão e seguindo o padrão internacional da ISAK. Transforme a antropometria em uma das ferramentas mais valiosas da sua prática clínica — mesmo que a faculdade não tenha ensinado como fazer isso na prática.</p>
+    <div class="hero-cta">
+      <a class="btn btn--big" href="#oferta">Quero dominar a antropometria</a>
+      <p class="btn-note">A PARTIR DE R$&nbsp;398 · TEORIA + AVALIAÇÃO COMPLETA DEMONSTRADA</p>
+    </div>
+    <div class="hero-meta">
+      <span><b>8 módulos · 5h</b> de aulas</span>
+      <span>Acesso vitalício</span>
+      <span>Por <b>dois avaliadores ISAK</b> · Nível 2</span>
+    </div>
+  </div>
+</section>
+<div class="ruler" aria-hidden="true"></div>
+
+<!-- PARA QUEM -->
+<section>
+  <div class="wrap">
+    <p class="section-label reveal">01 — Para quem é</p>
+    <h2 class="generic-h2 reveal">Feito para quem quer dominar a antropometria na prática.</h2>
+    <div class="who-list">
+      <div class="who-item reveal"><span class="check" aria-hidden="true"></span><p>Saiu da faculdade com a sensação de que <b>nunca aprendeu a avaliar corretamente</b> um paciente.</p></div>
+      <div class="who-item reveal"><span class="check" aria-hidden="true"></span><p>Quer <b>deixar de depender apenas da bioimpedância</b> para analisar a composição corporal.</p></div>
+      <div class="who-item reveal"><span class="check" aria-hidden="true"></span><p>Busca realizar avaliações <b>mais precisas e reproduzíveis</b>.</p></div>
+      <div class="who-item reveal"><span class="check" aria-hidden="true"></span><p>Deseja aprender <b>exatamente como cada medida deve ser realizada</b>, sem improvisações.</p></div>
+      <div class="who-item reveal"><span class="check" aria-hidden="true"></span><p>Quer acompanhar a <b>evolução real dos pacientes</b> com medidas confiáveis.</p></div>
+      <div class="who-item reveal"><span class="check" aria-hidden="true"></span><p>Entende que <b>pequenas falhas na técnica geram grandes erros</b> na interpretação.</p></div>
+      <div class="who-item reveal"><span class="check" aria-hidden="true"></span><p>Quer dominar a metodologia ISAK <b>sem investir milhares de reais</b> em cursos presenciais.</p></div>
+      <div class="who-item reveal"><span class="check" aria-hidden="true"></span><p>Procura um <b>material de consulta completo</b> para revisar sempre que surgir dúvida.</p></div>
+    </div>
+    <div class="identify reveal">
+      <p class="q">Você se identifica?</p>
+      <p>Então este curso foi feito para você. Comece hoje e faça sua próxima avaliação com técnica de verdade.</p>
+      <a class="btn" href="#oferta">Quero dominar a antropometria</a>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUÇÃO -->
+<div class="ruler" aria-hidden="true"></div>
+<section class="solution on-dark" id="sobre">
+  <div class="wrap">
+    <p class="section-label reveal">02 — O método</p>
+    <h2 class="reveal">Da marcação à interpretação seguindo a metodologia internacional ISAK.</h2>
+    <p class="lead reveal">Neste curso você aprenderá exatamente como realizar uma avaliação antropométrica completa, seguindo os princípios da padronização internacional da ISAK — o mesmo protocolo usado em laboratórios de pesquisa e no esporte de alto rendimento. Quando você mede no padrão, seu dado conversa com a ciência.</p>
+    <figure class="real-shot reveal">
+      <video class="loop" muted loop playsinline preload="none" poster="/resources/loop-braco.webp" width="1280" height="720" aria-label="Rinaldo Caporal mede com fita o perímetro do braço contraído de um avaliado, durante a gravação do curso">
+        <source src="/resources/loop-braco.mp4" type="video/mp4">
+      </video>
+      <figcaption><span class="rec">Gravação real</span><span class="cap">Módulo 05 · Perímetro do braço contraído</span></figcaption>
+    </figure>
+    <div class="sol-grid">
+      <div class="sol-card reveal">
+        <div class="icon">A</div>
+        <h3>Técnica padronizada</h3>
+        <p>Posicionamento do avaliado, localização dos pontos anatômicos e técnica de coleta explicados em detalhe, medida por medida.</p>
+      </div>
+      <div class="sol-card reveal">
+        <div class="icon">B</div>
+        <h3>Demonstração real</h3>
+        <p>Cada medida em vários ângulos, com close na pegada — sem improvisação, sem “cada um faz de um jeito”.</p>
+      </div>
+      <div class="sol-card reveal">
+        <div class="icon">C</div>
+        <h3>Interpretação clínica</h3>
+        <p>Percentual de gordura, massa magra, massa muscular, somatotipo e os principais indicadores traduzidos em decisão clínica.</p>
+      </div>
+    </div>
+    <div class="production reveal">
+      <span class="p-tag">Padrão de produção</span>
+      <h3>Nenhum curso de antropometria foi filmado assim.</h3>
+      <p>Equipe e equipamento profissionais de cinema, demonstrações em múltiplos ângulos e close fechado na pegada — você vê exatamente o que a mão faz, melhor do que veria em pé ao lado da maca.</p>
+      <ul class="frames" aria-label="Quadros reais da gravação do curso">
+        <li><video class="loop" muted loop playsinline preload="none" poster="/resources/loop-frankfort.webp" width="640" height="480" aria-label="Rinaldo posiciona a cabeça do avaliado no plano de Frankfort"><source src="/resources/loop-frankfort.mp4" type="video/mp4"></video><span><b>01</b> Posicionar · plano de Frankfort</span></li>
+        <li><video class="loop" muted loop playsinline preload="none" poster="/resources/loop-acromio.webp" width="640" height="480" aria-label="Rinaldo marca com caneta o ponto acromial no ombro do avaliado"><source src="/resources/loop-acromio.mp4" type="video/mp4"></video><span><b>02</b> Marcar · ponto acromial</span></li>
+        <li><video class="loop" muted loop playsinline preload="none" poster="/resources/loop-coxa.webp" width="640" height="480" aria-label="Adipômetro sendo posicionado na dobra da coxa, sobre o ponto marcado"><source src="/resources/loop-coxa.mp4" type="video/mp4"></video><span><b>03</b> Medir · dobra da coxa</span></li>
+      </ul>
+      <div class="p-specs" aria-hidden="true">
+        <span>Câmera de cinema · RAW</span>
+        <span>Múltiplos ângulos</span>
+        <span>Close na pegada</span>
+        <span>Edição profissional</span>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="ruler ruler--light" aria-hidden="true" style="background-color:var(--green-2)"></div>
+
+<!-- RESULTADO + COMO FUNCIONA (fundidas) -->
+<section class="transform">
+  <div class="wrap">
+    <p class="section-label reveal">03 — O resultado</p>
+    <h2 class="generic-h2 reveal">O que você será capaz de fazer ao concluir o curso</h2>
+    <div class="result-grid">
+      <div class="result reveal"><span class="num">01</span><div><h3>Avaliação completa padrão ISAK</h3><p>Realizar avaliações antropométricas completas seguindo a padronização internacional, do início ao fim.</p></div></div>
+      <div class="result reveal"><span class="num">02</span><div><h3>Composição corporal estimada</h3><p>Estimar percentual de gordura, massa magra, massa muscular, somatotipo, entre outros indicadores.</p></div></div>
+      <div class="result reveal"><span class="num">03</span><div><h3>Erros identificados e corrigidos</h3><p>Reconhecer e corrigir os erros mais comuns durante a coleta das medidas — antes que eles contaminem o resultado.</p></div></div>
+      <div class="result reveal"><span class="num">04</span><div><h3>Medidas reproduzíveis</h3><p>Coletar medidas consistentes, que se repetem entre avaliações e permitem comparar de verdade.</p></div></div>
+      <div class="result reveal"><span class="num">05</span><div><h3>Interpretação com segurança</h3><p>Interpretar corretamente os principais indicadores antropométricos e transformá-los em conduta.</p></div></div>
+      <div class="result reveal"><span class="num">06</span><div><h3>Emagrecimento e hipertrofia acompanhados</h3><p>Somatório de dobras com a cintura para ver a perda de gordura, e perímetro muscular corrigido para ver o ganho de músculo.</p></div></div>
+    </div>
+    <div class="format reveal">
+      <span class="format-tag">Como funciona</span>
+      <ul>
+        <li><b>Aulas gravadas</b> em 8 módulos, no seu ritmo</li>
+        <li><b>Demonstração</b> medida a medida, com close na pegada</li>
+        <li><b>Teoria aplicada</b> a emagrecimento, hipertrofia e crianças</li>
+        <li><b>Versão completa</b> com apostila, skill de relatório e caso prático</li>
+        <li><b>Acesso vitalício</b> com atualizações incluídas</li>
+      </ul>
+    </div>
+    <div class="apostila reveal">
+      <span class="format-tag">Na versão completa</span>
+      <h3>Apostila · 36 páginas</h3>
+      <p>Conceitos, exemplos resolvidos, casos práticos e apêndices de consulta rápida — como o roteiro da avaliação e as 8 dobras ISAK. Vem na versão completa, junto com a skill de relatório e a aula com caso prático. Toque numa página para ampliar.</p>
+      <ul class="pages">
+        <li><button type="button" data-full="/resources/apostila-v2-p01.webp" aria-label="Ampliar: Capa"><img src="/resources/apostila-v2-p01-mini.webp" alt="Capa da apostila Antropometria na Prática — da medição à interpretação" width="480" height="679" loading="lazy" decoding="async"><span>Capa</span></button></li>
+        <li><button type="button" data-full="/resources/apostila-v2-p09.webp" aria-label="Ampliar: Precisão × exatidão"><img src="/resources/apostila-v2-p09-mini.webp" alt="Página sobre precisão e exatidão, com a regra ISAK de repetição e o diagrama dos alvos" width="480" height="679" loading="lazy" decoding="async"><span>Precisão × exatidão</span></button></li>
+        <li><button type="button" data-full="/resources/apostila-v2-p26.webp" aria-label="Ampliar: Perímetro muscular corrigido"><img src="/resources/apostila-v2-p26-mini.webp" alt="Página com o diagrama do perímetro muscular corrigido e um exemplo resolvido" width="480" height="679" loading="lazy" decoding="async"><span>Perímetro muscular corrigido</span></button></li>
+        <li><button type="button" data-full="/resources/apostila-v2-p31.webp" aria-label="Ampliar: As 8 dobras ISAK"><img src="/resources/apostila-v2-p31-mini.webp" alt="Apêndice com a tabela das oito dobras padronizadas pela ISAK e o resumo da técnica" width="480" height="679" loading="lazy" decoding="async"><span>As 8 dobras ISAK</span></button></li>
+      </ul>
+    </div>
+    <div class="savings reveal">
+      <div class="s-seal" aria-hidden="true">R$</div>
+      <div>
+        <h3>Ainda não tem equipamento? Melhor ainda.</h3>
+        <p>O módulo 02 passa por cada instrumento — estadiômetro, balança, fita, adipômetro clínico ou científico, paquímetro — e mostra por que <b>o adipômetro clínico atende quase todos os casos</b>. Um modelo de cerca de R$&nbsp;150 bem calibrado não perde para um de R$&nbsp;1.000: comprando certo na primeira vez, a economia pode pagar o curso.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MÓDULOS -->
+<div class="ruler" aria-hidden="true" style="background-color:var(--paper-2)"></div>
+<section class="modules on-dark">
+  <div class="wrap">
+    <p class="section-label reveal">04 — O conteúdo</p>
+    <h2 class="reveal" style="font-family:var(--font-display);font-weight:700;font-size:clamp(2.1rem,5.6vw,3.4rem);line-height:1.02;max-width:16em">O que você vai aprender, módulo a módulo</h2>
+    <!-- Ícaro em aula (Parte 6, 31–39 s, recortado sem o slide) -->
+    <figure class="real-shot real-shot--icaro reveal">
+      <video class="loop" muted loop playsinline preload="none" poster="/resources/loop-icaro.webp" width="1280" height="720" aria-label="Ícaro Andrade explica, gesticulando, durante uma aula teórica do curso">
+        <source src="/resources/loop-icaro.mp4" type="video/mp4">
+      </video>
+      <figcaption><span class="rec">Aula teórica</span><span class="cap">Ícaro Andrade · Antropometria no emagrecimento</span></figcaption>
+    </figure>
+    <div class="module-list reveal" id="moduleList">
+      <!-- Títulos e descrições das aulas gravadas (transcrição BodyMap_Academy_Transcricoes.pdf + durações do Drive), 01/11/2026 -->
+      <div class="module"><button aria-expanded="false" aria-controls="m-body-1"><span class="m-num">01</span><span class="m-title">O que é cineantropometria e por que avaliar bem</span><span class="m-dur"><i style="width:31px" aria-hidden="true"></i>38min</span><span class="m-plus">+</span></button><div class="m-body" id="m-body-1"><div class="m-body-inner">Dobras cutâneas comparadas a bioimpedância, DEXA, ultrassom e apps de foto (custo, erro e evidência), a padronização ISAK e uma primeira noção de somatotipo.</div></div></div>
+      <div class="module"><button aria-expanded="false" aria-controls="m-body-2"><span class="m-num">02</span><span class="m-title">Conceitos, tipos de erro e equipamentos</span><span class="m-dur"><i style="width:39px" aria-hidden="true"></i>48min</span><span class="m-plus">+</span></button><div class="m-body" id="m-body-2"><div class="m-body-inner">Protocolo, erros administrativo, técnico e material, a regra ISAK de repetir cada medida, precisão × exatidão e os equipamentos — e por que manter sempre o mesmo.</div></div></div>
+      <div class="module"><button aria-expanded="false" aria-controls="m-body-3"><span class="m-num">03</span><span class="m-title">Composição corporal e escolha de equações</span><span class="m-dur"><i style="width:44px" aria-hidden="true"></i>54min</span><span class="m-plus">+</span></button><div class="m-body" id="m-body-3"><div class="m-body-inner">Gordura, tecido adiposo, massa magra e músculo; modelos de compartimentos e níveis de Wang; como as equações nascem e como escolher a certa para cada paciente.</div></div></div>
+      <div class="module"><button aria-expanded="false" aria-controls="m-body-4"><span class="m-num">04</span><span class="m-title">Equações para crianças e adolescentes</span><span class="m-dur"><i style="width:24px" aria-hidden="true"></i>30min</span><span class="m-plus">+</span></button><div class="m-body" id="m-body-4"><div class="m-body-inner">Por que não usar equação de adulto em quem ainda está crescendo e como escolher uma validada para cada perfil, como a de Slaughter (1988).</div></div></div>
+      <div class="module"><button aria-expanded="false" aria-controls="m-body-5"><span class="m-num">05</span><span class="m-title">Prática: avaliação completa demonstrada</span><span class="m-dur"><i style="width:38px" aria-hidden="true"></i>47min</span><span class="m-plus">+</span></button><div class="m-body" id="m-body-5"><div class="m-body-inner">Uma avaliação antropométrica completa realizada na prática, medida a medida, do posicionamento à leitura.</div></div></div>
+      <div class="module"><button aria-expanded="false" aria-controls="m-body-6"><span class="m-num">06</span><span class="m-title">Estratégias práticas com dobras cutâneas</span><span class="m-dur"><i style="width:29px" aria-hidden="true"></i>35min</span><span class="m-plus">+</span></button><div class="m-body" id="m-body-6"><div class="m-body-inner">Trabalhar com o valor bruto das dobras em vez do percentual, o efeito de medir 1 cm fora do ponto e como classificar a adiposidade (Olympic Six e Frisancho).</div></div></div>
+      <div class="module"><button aria-expanded="false" aria-controls="m-body-7"><span class="m-num">07</span><span class="m-title">Avaliação do emagrecimento</span><span class="m-dur"><i style="width:11px" aria-hidden="true"></i>14min</span><span class="m-plus">+</span></button><div class="m-body" id="m-body-7"><div class="m-body-inner">Somatório de dobras junto com o perímetro da cintura para enxergar a perda de gordura, inclusive a visceral, e os pontos de corte de risco cardiometabólico.</div></div></div>
+      <div class="module"><button aria-expanded="false" aria-controls="m-body-8"><span class="m-num">08</span><span class="m-title">Avaliação da hipertrofia e massa muscular</span><span class="m-dur"><i style="width:20px" aria-hidden="true"></i>25min</span><span class="m-plus">+</span></button><div class="m-body" id="m-body-8"><div class="m-body-inner">Massa muscular não é massa magra: equações de Martin e Lee e o perímetro muscular corrigido de braço e coxa para saber se houve ganho, com um caso real.</div></div></div>
+    </div>
+    <p class="reveal" style="margin-top:26px;font-family:var(--font-mono);font-size:.8rem;letter-spacing:.08em;color:rgba(242,243,243,.65)">TOTAL: 8 MÓDULOS · <b style="color:var(--lime)">5H</b> DE AULAS GRAVADAS</p>
+  </div>
+</section>
+<div class="ruler ruler--light" aria-hidden="true" style="background-color:var(--green)"></div>
+
+<!-- INSTRUTORES -->
+<section>
+  <div class="wrap">
+    <p class="section-label reveal">05 — Quem ensina</p>
+    <h2 class="generic-h2 reveal">Quem vai te guiar, medida por medida</h2>
+    <div class="mentors-grid">
+      <div class="mentor reveal">
+        <div class="photo"><img src="/resources/rinaldo-v2.webp" decoding="async" alt="Rinaldo Caporal, nutricionista" width="1200" height="900" loading="lazy"><span class="ph-tag" aria-hidden="true">Avaliador 01 · ISAK 2</span></div>
+        <div class="info">
+          <h3>Rinaldo Caporal</h3>
+          <p class="cred">Nutricionista · CRN6-21717 · ISAK Nível 2</p>
+          <p class="bio">Nutricionista, professor e cofundador da Health Compass. Com quase 10 anos de experiência, é especialista em nutrição para esportes de combate e powerlifting, com atletas de nível mundial no currículo. Certificado ISAK Nível 2, une a vivência acadêmica à prática da cineantropometria avançada — a mesma que você vai aprender aqui.</p>
+          <blockquote>“Com atletas de nível mundial, a diferença entre acertar e errar a conduta começa em milímetros. É essa precisão que vou te ensinar a ter nas mãos.”</blockquote>
+        </div>
+      </div>
+      <div class="mentor reveal">
+        <div class="photo"><img src="/resources/icaro-v2.webp" decoding="async" alt="Ícaro Andrade, nutricionista" width="1200" height="900" loading="lazy"><span class="ph-tag" aria-hidden="true">Avaliador 02 · ISAK</span></div>
+        <div class="info">
+          <h3>Ícaro Andrade</h3>
+          <p class="cred">Nutricionista · Nutrição Esportiva · Avaliador ISAK</p>
+          <p class="bio">Nutricionista, especialista em Nutrição Esportiva e avaliador ISAK, já formou centenas de profissionais em seus cursos presenciais e online.</p>
+          <p class="bio">Há anos atua no acompanhamento de atletas de alto rendimento, participando de trajetórias marcadas por títulos e conquistas em nível nacional e internacional, incluindo a representação do atletismo brasileiro no Campeonato Mundial de Marcha Atlética.</p>
+          <p class="bio">Sua atuação combina experiência acadêmica e prática clínica. Já ministrou aulas em instituições como USP e Uniguaçu, levando para a sala de aula a experiência construída diariamente no consultório e no acompanhamento de atletas de alta performance.</p>
+        </div>
+      </div>
+    </div>
+    <figure class="class-photo reveal">
+      <img src="/resources/turma-presencial.webp" decoding="async" alt="Foto de uma turma presencial de antropometria, com Rinaldo e Ícaro entre os alunos" width="1280" height="960" loading="lazy">
+      <figcaption><span class="tag">Turma presencial</span>Centenas de profissionais já aprenderam a técnica com a gente ao vivo. Agora ela chega em vídeo, com close na pegada e acesso para rever quando quiser.</figcaption>
+    </figure>
+  </div>
+</section>
+
+
+<!-- OFERTA -->
+<div class="ruler" aria-hidden="true"></div>
+<section class="offer on-dark" id="oferta">
+  <div class="wrap">
+    <p class="section-label reveal" style="justify-content:center">06 — Inscrição</p>
+    <h2 class="reveal">Um investimento que se paga com um único paciente</h2>
+    <p class="sub reveal">Você leva <b>segurança na coleta, técnica refinada e interpretação detalhada</b>, com acesso vitalício — e <b>uma única renovação de paciente já paga o curso</b>.</p>
+    <!-- CHECKOUT: os dois links da Kiwify (uma oferta para cada cartão) -->
+    <div class="offer-grid">
+      <div class="offer-box offer-box--curso reveal">
+        <span class="launch-badge">Curso</span>
+        <h3 class="offer-nome">Antropometria na Prática</h3>
+        <p class="price">R$&nbsp;398</p>
+        <p class="price-cash">à vista · ou em até 12x no cartão</p>
+        <ul class="offer-lista"><li><span class="tick" aria-hidden="true"></span><span>8 módulos · 5h de aulas gravadas</span></li><li><span class="tick" aria-hidden="true"></span><span>Teoria + avaliação completa demonstrada</span></li><li><span class="tick" aria-hidden="true"></span><span>Acesso vitalício</span></li><li><span class="tick" aria-hidden="true"></span><span>Garantia de 7 dias</span></li></ul>
+        <a class="btn btn--big btn--ghost-dark" href="https://pay.kiwify.com.br/K8VIxg5" id="checkoutCurso">Quero o curso</a>
+      </div>
+      <div class="offer-box offer-box--completo reveal">
+        <span class="launch-badge launch-badge--cheio">Curso completo · recomendado</span>
+        <h3 class="offer-nome">Curso + materiais de consultório</h3>
+        <p class="price">R$&nbsp;498</p>
+        <p class="price-cash">à vista · ou em até 12x no cartão</p>
+        <ul class="offer-lista"><li><span class="tick" aria-hidden="true"></span><span><b>Tudo do curso</b></span></li><li><span class="tick" aria-hidden="true"></span><span>Apostila · 36 páginas</span></li><li><span class="tick" aria-hidden="true"></span><span>Skill que gera o relatório antropométrico completo</span></li><li><span class="tick" aria-hidden="true"></span><span>Aula com caso prático</span></li></ul>
+        <a class="btn btn--big" href="https://pay.kiwify.com.br/dgqUqzI" id="checkoutCompleto">Quero o curso completo</a>
+      </div>
+    </div>
+    <p class="btn-note reveal" style="text-align:center;margin-top:22px">COMPRA SEGURA PELA KIWIFY · PIX, CARTÃO OU BOLETO · ACESSO IMEDIATO</p>
+    <div class="guarantee reveal">
+      <div class="seal">7<br>DIAS</div>
+      <div>
+        <h3>Garantia de 7 dias</h3>
+        <p>Entre, assista às aulas e aplique em um paciente. Se não sentir diferença na sua segurança ao avaliar, devolvemos 100% do valor dentro de 7 dias — sem perguntas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="ruler ruler--light" aria-hidden="true" style="background-color:var(--green-2)"></div>
+
+<!-- FAQ -->
+<section id="duvidas">
+  <div class="wrap">
+    <p class="section-label reveal">07 — Dúvidas frequentes</p>
+    <h2 class="generic-h2 reveal">Perguntas que sempre chegam</h2>
+    <div class="faq-list reveal">
+      <details class="faq"><summary>Qual a diferença entre o curso e o curso completo?</summary><p class="a">O curso (R$ 398) tem os 8 módulos, cerca de 5 horas de aulas, com acesso vitalício. O curso completo (R$ 498) soma a apostila de 36 páginas, a skill que gera o relatório antropométrico completo e uma aula com caso prático.</p></details>
+      <details class="faq"><summary>Dá para aprender uma técnica manual assistindo vídeo?</summary><p class="a">Sim — desde que o vídeo mostre exatamente o que a sua mão precisa fazer. Por isso o curso não é só teoria: a avaliação completa é demonstrada medida a medida, em ângulo fechado, mostrando pegada, posicionamento e leitura. Você assiste, treina em alguém próximo e revê a demonstração quantas vezes precisar.</p></details>
+      <details class="faq"><summary>Ainda não sou formado. O curso é para mim?</summary><p class="a">Com certeza. A faculdade te ensina a teoria, mas não te prepara para avaliar um paciente de verdade. Imagine se formar não apenas com o diploma na mão, mas já dominando uma habilidade que a maioria dos profissionais formados não tem. É uma vantagem competitiva gigantesca.</p></details>
+      <details class="faq"><summary>Preciso ter equipamentos para começar?</summary><p class="a">Não — e é até melhor comprar depois de começar. O módulo 02 passa por cada instrumento e mostra por que o adipômetro clínico atende quase todos os casos: um modelo de cerca de R$ 150 bem calibrado não perde para um de R$ 1.000. Comprando certo na primeira vez, a economia pode pagar o curso.</p></details>
+      <details class="faq"><summary>O que é a skill que gera o relatório antropométrico?</summary><p class="a">É uma skill para o Claude, a inteligência artificial da Anthropic: você a instala na sua conta, envia a avaliação do paciente (PDF, print ou anotação) e recebe o relatório antropométrico completo no padrão ISAK. Os cálculos são feitos por código conferido, não pela IA. É preciso ter uma conta no Claude.</p></details>
+      <details class="faq"><summary>O curso emite certificação oficial da ISAK?</summary><p class="a">Não. A certificação oficial ISAK só é emitida em cursos presenciais credenciados. Aqui você aprende a técnica e a padronização com base nos princípios da ISAK, por uma fração do investimento — ideal para aplicar no consultório e para se preparar caso queira a certificação presencial no futuro.</p></details>
+      <details class="faq"><summary>Por quanto tempo terei acesso?</summary><p class="a">Acesso vitalício. Compre uma vez e consulte sempre que precisar.</p></details>
+      <details class="faq"><summary>Antropometria é melhor que bioimpedância?</summary><p class="a">São ferramentas diferentes. A antropometria bem executada é barata, reproduzível e independe de condições como hidratação — e te dá autonomia para avaliar qualquer paciente, em qualquer lugar. O curso te ensina a dominá-la para não depender de um único método.</p></details>
+      <details class="faq"><summary>Quais são as formas de pagamento?</summary><p class="a">Pix, cartão de crédito em até 12x ou boleto. O pagamento é processado pela Kiwify, uma plataforma segura de cursos online.</p></details>
+      <details class="faq"><summary>Como recebo o acesso depois da compra?</summary><p class="a">Imediatamente. Assim que o pagamento for confirmado, você recebe por e-mail o link da área de alunos com todos os módulos — e, no curso completo, a apostila, a skill de relatório e a aula com caso prático.</p></details>
+      <details class="faq"><summary>Preciso de alguém para praticar as medidas?</summary><p class="a">Ajuda, mas não é obrigatório para acompanhar o curso. Qualquer pessoa próxima serve de modelo para treinar, seguindo as demonstrações das aulas. Muitos alunos praticam com colegas, familiares ou os próprios pacientes desde a primeira semana.</p></details>
+      <details class="faq"><summary>E se eu não gostar do curso?</summary><p class="a">Você tem 7 dias de garantia incondicional. Se não for para você, devolvemos 100% do valor.</p></details>
+    </div>
+  </div>
+</section>
+
+
+<!-- FECHAMENTO -->
+<section class="waitlist">
+  <div class="wrap">
+    <p class="section-label reveal" style="justify-content:center">Comece hoje</p>
+    <h2 class="reveal">Da medição à interpretação, no seu ritmo.</h2>
+    <p class="reveal">Escolha entre o curso e o curso completo. Acesso imediato após a confirmação do pagamento.</p>
+    <a class="btn reveal" href="#oferta">Ver as opções</a>
+    <p class="btn-note reveal" style="text-align:center">A PARTIR DE R$&nbsp;398 · GARANTIA DE 7 DIAS · ACESSO VITALÍCIO</p>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+
+<footer id="contato">
+  <div class="wrap">
+    <span>Antropometria na Prática: da medição à interpretação · Curso online · Padrão ISAK</span>
+    <span>Rinaldo Caporal · CRN6-21717 &nbsp;|&nbsp; Ícaro Andrade · Nutricionista</span>
+    <span>Contato: <a href="mailto:jrcaporal@gmail.com" style="color:inherit">jrcaporal@gmail.com</a><!-- TODO: trocar por e-mail do curso quando existir --></span>
+    <span>© 2026 · Todos os direitos reservados · <a href="termos.html" style="color:inherit">Termos de Uso</a> · <a href="privacidade.html" style="color:inherit">Privacidade</a></span>
+  </div>
+</footer>
+
+<!-- visualizador das páginas da apostila -->
+<dialog class="viewer" id="viewer" aria-label="Página da apostila">
+  <button type="button" class="viewer-close" aria-label="Fechar">×</button>
+  <img alt="" width="1240" height="1754">
+</dialog>
+
+<!-- STICKY CTA (mobile) -->
+<div class="sticky-cta" id="stickyCta" aria-hidden="true" inert>
+  <div class="info">
+    <div class="t">Antropometria na Prática</div>
+    <div class="p">a partir de R$&nbsp;398 · acesso vitalício</div>
+  </div>
+  <a class="btn" href="#oferta">Quero acesso</a>
+</div>
+
+<script>
+// Reveal: IntersectionObserver + fallback por scroll (sem JS o CSS mantém tudo visível)
+const pending=[...document.querySelectorAll('.reveal')];
+const hero=document.querySelector('.hero');
+const offer=document.getElementById('oferta');
+const sticky=document.getElementById('stickyCta');
+function show(el){el.classList.add('in')}
+if('IntersectionObserver' in window){
+  const io=new IntersectionObserver(es=>{
+    es.forEach(e=>{if(e.isIntersecting){show(e.target);io.unobserve(e.target)}});
+  },{rootMargin:'0px 0px -40px 0px'});
+  pending.forEach(el=>io.observe(el));
+}
+function tick(){
+  const vh=innerHeight;
+  for(let i=pending.length-1;i>=0;i--){
+    const el=pending[i];
+    if(el.classList.contains('in')){pending.splice(i,1);continue}
+    const r=el.getBoundingClientRect();
+    if(r.top<vh-40&&r.bottom>0){show(el);pending.splice(i,1)}
+  }
+  const heroBottom=hero.getBoundingClientRect().bottom;
+  const or=offer.getBoundingClientRect();
+  const showSticky=heroBottom<0&&!(or.top<vh*.85&&or.bottom>0);
+  sticky.classList.toggle('show',showSticky);
+  sticky.toggleAttribute('inert',!showSticky);
+  sticky.setAttribute('aria-hidden',String(!showSticky));
+  progressBar.style.width=Math.min(100,scrollY/(document.documentElement.scrollHeight-vh)*100)+'%';
+}
+addEventListener('scroll',tick,{passive:true});
+addEventListener('resize',tick,{passive:true});
+addEventListener('load',tick);
+tick();
+
+// Menu do topo (celular): abre/fecha, fecha ao escolher seção, Esc ou toque fora
+const nav=document.getElementById('nav');
+const navToggle=document.querySelector('.nav-toggle');
+function setNav(open){
+  nav.classList.toggle('open',open);
+  navToggle.setAttribute('aria-expanded',String(open));
+  navToggle.setAttribute('aria-label',open?'Fechar menu':'Abrir menu');
+}
+navToggle.addEventListener('click',()=>setNav(!nav.classList.contains('open')));
+nav.addEventListener('click',e=>{if(e.target.closest('a'))setNav(false)});
+addEventListener('keydown',e=>{if(e.key==='Escape'&&nav.classList.contains('open')){setNav(false);navToggle.focus()}});
+document.addEventListener('click',e=>{if(nav.classList.contains('open')&&!e.target.closest('.topbar'))setNav(false)});
+
+// Loops mudos: só baixam e tocam quando aparecem na tela; param fora dela.
+// Quem pediu "reduzir movimento" no sistema vê só a imagem parada.
+const calmo=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const loops=[...document.querySelectorAll('video.loop')];
+if(!calmo&&'IntersectionObserver' in window){
+  const lo=new IntersectionObserver(es=>{
+    es.forEach(e=>{
+      const v=e.target;
+      if(e.isIntersecting){v.preload='auto';const p=v.play();if(p)p.catch(()=>{})}
+      else v.pause();
+    });
+  },{threshold:.25});
+  loops.forEach(v=>lo.observe(v));
+}
+
+// Apostila: toque na página abre a versão grande
+const viewer=document.getElementById('viewer');
+const viewerImg=viewer.querySelector('img');
+document.querySelectorAll('.pages button').forEach(b=>{
+  b.addEventListener('click',()=>{
+    viewerImg.src=b.dataset.full;
+    viewerImg.alt=b.querySelector('img').alt;
+    if(viewer.showModal)viewer.showModal();else window.open(b.dataset.full,'_blank');
+  });
+});
+viewer.querySelector('.viewer-close').addEventListener('click',()=>viewer.close());
+viewer.addEventListener('click',e=>{if(e.target===viewer)viewer.close()});
+
+// Acordeão — grid-template-rows anima sem medir altura (sobrevive a rotação/resize)
+document.querySelectorAll('.module button').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const open = btn.parentElement.classList.toggle('open');
+    btn.setAttribute('aria-expanded',open);
+  });
+});
+</script>
+</body>
+</html>
