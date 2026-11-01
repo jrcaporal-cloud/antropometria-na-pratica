@@ -436,6 +436,35 @@ h1 .u{color:var(--lime)}
 .pages button:hover img{transform:translateY(-3px);box-shadow:0 1px 0 rgba(13,13,13,.08),0 16px 30px -14px rgba(13,13,13,.5)}
 .pages button:focus-visible{outline:3px solid var(--accent-text);outline-offset:4px;border-radius:4px}
 .pages span{display:block;margin-top:10px;font-family:var(--font-mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
+
+/* skill de relatório: 2 demos de PC empilhadas + celular ao lado (0,71fr iguala as alturas) */
+.skill{margin-top:56px;scroll-margin-top:84px}
+.skill h3{font-family:var(--font-display);font-weight:700;font-size:clamp(1.55rem,4vw,2rem);line-height:1.05}
+.skill>p{margin-top:8px;color:var(--ink-soft);font-size:.95rem;max-width:34.4em}
+.skill-pontos{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:10px;max-width:56em}
+.skill-pontos li{position:relative;padding-left:16px;font-size:.92rem;color:var(--ink-soft)}
+.skill-pontos li::before{content:"";position:absolute;left:0;top:.6em;width:7px;height:7px;border-radius:50%;background:var(--accent-text)}
+.skill-pontos b{color:var(--ink)}
+.skill-demo{margin:24px 0 0;display:grid;grid-template-columns:1fr .71fr;grid-template-areas:"a c" "b c";gap:10px;max-width:760px}
+.skill-demo figure{margin:0;position:relative}
+.d-abas{grid-area:a}.d-rolagem{grid-area:b}.d-celular{grid-area:c}
+.skill-demo video{display:block;width:100%;height:auto;background:#fbfaf7}
+.skill-pc video{aspect-ratio:4/3;border-radius:10px;border:1px solid rgba(13,13,13,.14);box-shadow:0 10px 24px -14px rgba(13,13,13,.45)}
+.skill-cel video{aspect-ratio:540/1168;border-radius:22px;border:6px solid var(--ink);box-shadow:0 14px 30px -16px rgba(13,13,13,.6)}
+.skill-demo figcaption{
+  position:absolute;left:8px;bottom:8px;max-width:calc(100% - 16px);
+  font-family:var(--font-mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--paper);background:rgba(13,13,13,.88);padding:4px 8px;border-radius:4px;
+}
+.skill-cel figcaption{left:14px;bottom:14px;max-width:calc(100% - 28px)}
+.skill-demo figcaption b{color:var(--lime);font-weight:600;margin-right:4px}
+.skill-nota{margin-top:12px;font-size:.8rem;color:var(--ink-soft);max-width:56em}
+.offer-lista a{color:var(--lime);text-decoration:underline;text-underline-offset:3px}
+@media (max-width:719px){
+  .skill-demo figcaption{left:5px;bottom:5px;max-width:calc(100% - 10px);font-size:.56rem;letter-spacing:.06em;padding:3px 6px}
+  .skill-cel figcaption{left:10px;bottom:10px}
+  .skill-demo .so-largo{display:none}
+}
 .viewer{border:0;padding:0;background:transparent;max-width:min(92vw,760px);max-height:92vh;margin:auto;overflow:visible}
 .viewer::backdrop{background:rgba(13,13,13,.82)}
 .viewer img{display:block;width:auto;max-width:100%;max-height:88vh;height:auto;border-radius:4px;background:#fff}
@@ -767,6 +796,8 @@ footer a{display:inline-block;padding:6px 2px}
   .format li:first-child{border-left:none;padding-left:0}
   .frames{grid-template-columns:repeat(3,1fr);overflow:visible}
   .pages{grid-template-columns:repeat(4,1fr);overflow:visible;gap:22px}
+  .skill-pontos{grid-template-columns:repeat(3,1fr);column-gap:28px}
+  .skill-demo{gap:16px}
   .class-photo{display:grid;grid-template-columns:1.7fr 1fr;align-items:center}
   .class-photo img{aspect-ratio:4/3;height:100%}
   .class-photo figcaption{padding:28px 32px;font-size:1rem;gap:10px}
@@ -1036,6 +1067,23 @@ footer a{display:inline-block;padding:6px 2px}
         <li><button type="button" data-full="/resources/apostila-v2-p31.webp" aria-label="Ampliar: As 8 dobras ISAK"><img src="/resources/apostila-v2-p31-mini.webp" alt="Apêndice com a tabela das oito dobras padronizadas pela ISAK e o resumo da técnica" width="480" height="679" loading="lazy" decoding="async"><span>As 8 dobras ISAK</span></button></li>
       </ul>
     </div>
+    <!-- skill: demos gravadas do exemplo fictício "EXEMPLO-JUDÔ" (skill-antropometria-isak/validacao-local/saidas/compartilhar) -->
+    <div class="skill reveal" id="skill">
+      <span class="format-tag">Na versão completa</span>
+      <h3>Skill de relatório antropométrico</h3>
+      <p>Uma skill para o Claude, a IA da Anthropic. Você envia a avaliação como ela já existe — PDF ou print do sistema que você usa, ou a ficha em papel — e ela confere as medidas com você, analisa no padrão ISAK e gera dois relatórios: o técnico, para você, e uma página para o paciente abrir no celular.</p>
+      <ul class="skill-pontos">
+        <li><b>Real ou erro de medida?</b> Cada mudança vem marcada como real, provável ou dentro do erro, considerando o erro de medida.</li>
+        <li><b>Abas por pergunta:</b> gordura, músculo, formato — somatótipo e Phantom — e os dados completos.</li>
+        <li><b>Para o paciente:</b> o resultado em linguagem simples, com mapa do corpo, meta e evolução.</li>
+      </ul>
+      <div class="skill-demo">
+        <figure class="skill-pc d-abas"><video class="loop" muted loop playsinline preload="none" poster="/resources/skill-abas.webp" width="960" height="720" aria-label="Relatório da skill no computador: o cursor clica nas abas Gordura, Músculo, Formato e Dados e mostra os gráficos de cada uma"><source src="/resources/skill-abas.mp4" type="video/mp4"></video><figcaption><b>01</b> Abas do relatório</figcaption></figure>
+        <figure class="skill-pc d-rolagem"><video class="loop" muted loop playsinline preload="none" poster="/resources/skill-rolagem.webp" width="960" height="720" aria-label="Relatório da skill rolando: o cursor passa nos pontos do gráfico e aparece se a mudança foi real, provável ou dentro do erro de medida"><source src="/resources/skill-rolagem.mp4" type="video/mp4"></video><figcaption><b>02</b> Real × erro de medida</figcaption></figure>
+        <figure class="skill-cel d-celular"><video class="loop" muted loop playsinline preload="none" poster="/resources/skill-celular.webp" width="540" height="1168" aria-label="Página do paciente no celular: cartões de gordura, músculo e peso, meta, recado e a seção Sua evolução sendo aberta"><source src="/resources/skill-celular.mp4" type="video/mp4"></video><figcaption><b>03</b> <span class="so-largo">Página do </span>paciente</figcaption></figure>
+      </div>
+      <p class="skill-nota">Demonstração gravada com um exemplo de dados fictícios. A IA lê, confere e interpreta; as contas são feitas por código testado. Funciona com uma conta no Claude.</p>
+    </div>
     <div class="savings reveal">
       <div class="s-seal" aria-hidden="true">R$</div>
       <div>
@@ -1131,7 +1179,7 @@ footer a{display:inline-block;padding:6px 2px}
         <h3 class="offer-nome">Curso + materiais de consultório</h3>
         <p class="price">R$&nbsp;498</p>
         <p class="price-cash">à vista · ou em até 12x no cartão</p>
-        <ul class="offer-lista"><li><span class="tick" aria-hidden="true"></span><span><b>Tudo do curso</b></span></li><li><span class="tick" aria-hidden="true"></span><span>Apostila · 36 páginas</span></li><li><span class="tick" aria-hidden="true"></span><span>Skill que gera o relatório antropométrico completo</span></li><li><span class="tick" aria-hidden="true"></span><span>Aula com caso prático</span></li></ul>
+        <ul class="offer-lista"><li><span class="tick" aria-hidden="true"></span><span><b>Tudo do curso</b></span></li><li><span class="tick" aria-hidden="true"></span><span>Apostila · 36 páginas</span></li><li><span class="tick" aria-hidden="true"></span><span>Skill que gera o relatório antropométrico completo · <a href="#skill">ver exemplo</a></span></li><li><span class="tick" aria-hidden="true"></span><span>Aula com caso prático</span></li></ul>
         <a class="btn btn--big" href="https://pay.kiwify.com.br/dgqUqzI" id="checkoutCompleto">Quero o curso completo</a>
       </div>
     </div>
