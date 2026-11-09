@@ -668,6 +668,16 @@ h1 .u{color:var(--lime)}
 .guarantee h3{font-size:1rem;font-weight:700;margin-bottom:4px}
 .guarantee p{font-size:.88rem;color:rgba(242,243,243,.72)}
 
+.promo{max-width:560px;margin:40px auto 0}
+.promo .offer-box{max-width:none}
+.promo .price-old{margin-top:18px}
+.promo-relogio{display:flex;justify-content:center;gap:10px;margin:22px 0 0;font-family:var(--font-mono)}
+.promo-relogio div{min-width:62px;padding:10px 6px 8px;border:1px solid rgba(4,244,251,.45);border-radius:10px;background:rgba(13,13,13,.35)}
+.promo-relogio b{display:block;font-size:1.5rem;line-height:1;color:var(--lime);font-variant-numeric:tabular-nums}
+.promo-relogio span{display:block;margin-top:5px;font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(242,243,243,.65)}
+.promo-fim{font-family:var(--font-mono);font-size:.78rem;letter-spacing:.06em;color:rgba(242,243,243,.7);margin-top:10px}
+.promo .offer-lista{margin:24px auto 28px}
+
 /* ================= FAQ ================= */
 .faq-list{margin-top:40px;border-top:1px solid rgba(13,13,13,.15)}
 .faq{border-bottom:1px solid rgba(13,13,13,.15)}
@@ -949,7 +959,7 @@ footer a{display:inline-block;padding:6px 2px}
     <p class="hero-sub">Aprenda a realizar avaliações antropométricas com segurança, precisão e seguindo o padrão internacional da ISAK. Transforme a antropometria em uma das ferramentas mais valiosas da sua prática clínica — mesmo que a faculdade não tenha ensinado como fazer isso na prática.</p>
     <div class="hero-cta">
       <a class="btn btn--big" href="#oferta">Quero dominar a antropometria</a>
-      <p class="btn-note">A PARTIR DE R$&nbsp;398 · TEORIA + AVALIAÇÃO COMPLETA DEMONSTRADA</p>
+      <p class="btn-note" data-promo="CURSO COMPLETO POR R$&nbsp;398 · SÓ ATÉ 16/11 ÀS 18H">A PARTIR DE R$&nbsp;398 · TEORIA + AVALIAÇÃO COMPLETA DEMONSTRADA</p>
     </div>
     <div class="hero-meta">
       <span><b>8 módulos · 4h52</b> de aulas</span>
@@ -1183,6 +1193,20 @@ footer a{display:inline-block;padding:6px 2px}
         <a class="btn btn--big" href="https://pay.kiwify.com.br/dgqUqzI" id="checkoutCompleto">Quero o curso completo</a>
       </div>
     </div>
+    <!-- OFERTA DA SEMANA (09/11 18h → 16/11 18h, Brasília): o JS mostra este cartão e esconde os dois acima -->
+    <div class="promo" id="promo" hidden>
+      <div class="offer-box offer-box--completo">
+        <span class="launch-badge launch-badge--cheio">Oferta da semana</span>
+        <h3 class="offer-nome">Curso completo pelo preço do curso</h3>
+        <p class="price-old">de <s>R$&nbsp;498</s> por</p>
+        <p class="price">R$&nbsp;398</p>
+        <p class="price-cash">à vista · ou em até 12x no cartão</p>
+        <div class="promo-relogio" aria-label="Tempo até o fim da oferta"><div><b id="pD">0</b><span>dias</span></div><div><b id="pH">00</b><span>horas</span></div><div><b id="pM">00</b><span>min</span></div><div><b id="pS">00</b><span>seg</span></div></div>
+        <p class="promo-fim">A OFERTA ACABA EM 16/11, ÀS 18H (BRASÍLIA)</p>
+        <ul class="offer-lista"><li><span class="tick" aria-hidden="true"></span><span><b>Curso completo:</b> 8 módulos · 4h52 de aulas</span></li><li><span class="tick" aria-hidden="true"></span><span>Apostila · 36 páginas</span></li><li><span class="tick" aria-hidden="true"></span><span>Skill que gera o relatório antropométrico completo · <a href="#skill">ver exemplo</a></span></li><li><span class="tick" aria-hidden="true"></span><span>Aula com caso prático</span></li><li><span class="tick" aria-hidden="true"></span><span>Acesso vitalício · garantia de 7 dias</span></li></ul>
+        <a class="btn btn--big" href="#" id="checkoutPromo">Quero o curso completo por R$&nbsp;398</a>
+      </div>
+    </div>
     <p class="btn-note reveal" style="text-align:center;margin-top:22px">COMPRA SEGURA PELA KIWIFY · PIX, CARTÃO OU BOLETO · ACESSO IMEDIATO</p>
     <div class="guarantee reveal">
       <div class="seal">7<br>DIAS</div>
@@ -1223,9 +1247,9 @@ footer a{display:inline-block;padding:6px 2px}
   <div class="wrap">
     <p class="section-label reveal" style="justify-content:center">Comece hoje</p>
     <h2 class="reveal">Da medição à interpretação, no seu ritmo.</h2>
-    <p class="reveal">Escolha entre o curso e o curso completo. Acesso imediato após a confirmação do pagamento.</p>
+    <p class="reveal" data-promo="Até 16/11, às 18h, o curso completo sai pelo preço do curso. Acesso imediato após a confirmação do pagamento.">Escolha entre o curso e o curso completo. Acesso imediato após a confirmação do pagamento.</p>
     <a class="btn reveal" href="#oferta">Ver as opções</a>
-    <p class="btn-note reveal" style="text-align:center">A PARTIR DE R$&nbsp;398 · GARANTIA DE 7 DIAS · ACESSO VITALÍCIO</p>
+    <p class="btn-note reveal" style="text-align:center" data-promo="CURSO COMPLETO POR R$&nbsp;398 · GARANTIA DE 7 DIAS · ACESSO VITALÍCIO">A PARTIR DE R$&nbsp;398 · GARANTIA DE 7 DIAS · ACESSO VITALÍCIO</p>
   </div>
 </section>
 
@@ -1250,12 +1274,34 @@ footer a{display:inline-block;padding:6px 2px}
 <div class="sticky-cta" id="stickyCta" aria-hidden="true" inert>
   <div class="info">
     <div class="t">Antropometria na Prática</div>
-    <div class="p">a partir de R$&nbsp;398 · acesso vitalício</div>
+    <div class="p" data-promo="completo por R$&nbsp;398 · até 16/11">a partir de R$&nbsp;398 · acesso vitalício</div>
   </div>
   <a class="btn" href="#oferta">Quero acesso</a>
 </div>
 
 <script>
+// Oferta da semana: o curso completo por R$ 398 de 09/11 18h a 16/11 18h (Brasília).
+// Fora dessa janela a página fica como sempre (dois cartões). Depois da semana, remover este bloco.
+const PROMO={inicio:Date.parse('2026-11-09T18:00:00-03:00'),fim:Date.parse('2026-11-16T18:00:00-03:00'),link:'https://pay.kiwify.com.br/5mjzhmG'};
+(function(){
+  const agora=Date.now();
+  if(!(agora>=PROMO.inicio&&agora<PROMO.fim))return;
+  document.querySelector('.offer-grid').style.display='none';
+  document.getElementById('promo').hidden=false;
+  document.getElementById('checkoutPromo').href=PROMO.link;
+  document.querySelectorAll('[data-promo]').forEach(el=>{el.innerHTML=el.dataset.promo});
+  const dois=n=>String(n).padStart(2,'0');
+  function relogio(){
+    const s=Math.max(0,Math.floor((PROMO.fim-Date.now())/1000));
+    if(s===0){location.reload();return}
+    document.getElementById('pD').textContent=Math.floor(s/86400);
+    document.getElementById('pH').textContent=dois(Math.floor(s%86400/3600));
+    document.getElementById('pM').textContent=dois(Math.floor(s%3600/60));
+    document.getElementById('pS').textContent=dois(s%60);
+  }
+  relogio();setInterval(relogio,1000);
+})();
+
 // Reveal: IntersectionObserver + fallback por scroll (sem JS o CSS mantém tudo visível)
 const pending=[...document.querySelectorAll('.reveal')];
 const hero=document.querySelector('.hero');
