@@ -1193,7 +1193,7 @@ footer a{display:inline-block;padding:6px 2px}
         <a class="btn btn--big" href="https://pay.kiwify.com.br/dgqUqzI" id="checkoutCompleto">Quero o curso completo</a>
       </div>
     </div>
-    <!-- OFERTA DA SEMANA (09/11 18h → 16/11 18h, Brasília): o JS mostra este cartão e esconde os dois acima -->
+    <!-- OFERTA DA SEMANA (09/11 → 16/11 18h, Brasília): o JS mostra este cartão e esconde os dois acima -->
     <div class="promo" id="promo" hidden>
       <div class="offer-box offer-box--completo">
         <span class="launch-badge launch-badge--cheio">Oferta da semana</span>
@@ -1280,9 +1280,9 @@ footer a{display:inline-block;padding:6px 2px}
 </div>
 
 <script>
-// Oferta da semana: o curso completo por R$ 398 de 09/11 18h a 16/11 18h (Brasília).
+// Oferta da semana: o curso completo por R$ 398 de 09/11 a 16/11 18h (Brasília).
 // Fora dessa janela a página fica como sempre (dois cartões). Depois da semana, remover este bloco.
-const PROMO={inicio:Date.parse('2026-11-09T18:00:00-03:00'),fim:Date.parse('2026-11-16T18:00:00-03:00'),link:'https://pay.kiwify.com.br/5mjzhmG'};
+const PROMO={inicio:Date.parse('2026-11-09T12:00:00-03:00'),fim:Date.parse('2026-11-16T18:00:00-03:00'),link:'https://pay.kiwify.com.br/5mjzhmG'};
 (function(){
   const agora=Date.now();
   if(!(agora>=PROMO.inicio&&agora<PROMO.fim))return;
